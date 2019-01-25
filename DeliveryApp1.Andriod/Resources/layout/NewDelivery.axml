@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:tooltipText="Map">
+	<EditText
+		android:inputType="textEmailAddress"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/packageNameEditText"
+		android:hint="Name of Package" />
+	<Button
+		android:text="Save"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/saveButton" />
+	<TextView
+		android:text="Locate package origin"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView1"
+		android:hint="Locate" />
+
+	<fragment 
+		class= "com.google.android.gms.maps.MapFragment"
+		android:layout_width="match_parent"
+		android:layout_height="200dp"
+		android:id ="@+id/mapFragment"/>
+
+	<TextView
+		android:text="Locate package destination"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView2"
+		android:hint="Locate" />
+
+	<fragment 
+		class= "com.google.android.gms.maps.MapFragment"
+		android:layout_width="match_parent"
+		android:layout_height="200dp"
+		android:id ="@+id/destinationmapFragment"/>
+</LinearLayout>

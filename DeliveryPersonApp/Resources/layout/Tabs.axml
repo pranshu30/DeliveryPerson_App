@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<android.support.design.widget.TabLayout
+        android:id="@+id/mainTabLayout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+       
+		<android.support.design.widget.TabItem 
+		android:text ="Delviering"/>
+		<android.support.design.widget.TabItem 
+		android:text ="Waiting"/>
+		<android.support.design.widget.TabItem 
+		android:text ="Delviered"/>
+</android.support.design.widget.TabLayout>
+    
+<FrameLayout
+		android:id ="@+id/contentFrame"
+		 android:layout_height="wrap_content"
+        android:layout_width="match_parent"	/>
+
+</LinearLayout>
